@@ -29,7 +29,6 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun HelloScreen() {
-    // TODO: put YOUR info here
     val myName  = "Jinpeng Huang"
     val myEmail = "jinpeng@bu.edu"
 
@@ -39,7 +38,7 @@ fun HelloScreen() {
         modifier = Modifier
             .fillMaxSize()
             .padding(24.dp),
-        verticalAlignment = Alignment.CenterVertically,
+        verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(text = "$myName\n$myEmail", style = MaterialTheme.typography.titleMedium)
